@@ -5,5 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CustoRepo extends JpaRepository<CustomerEntity,Integer> {
     Boolean existsByEmpno(Integer mnv);
+    CustomerEntity findByName(String name);
 
 }

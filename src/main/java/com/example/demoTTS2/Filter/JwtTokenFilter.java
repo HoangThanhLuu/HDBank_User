@@ -35,6 +35,7 @@ public class JwtTokenFilter extends OncePerRequestFilter {
                 Pair.of("/registerUser", "POST"),
                 Pair.of("/loginAdmin", "POST"),
                 Pair.of("/add/customer", "POST")
+
         );
 
         // Kiểm tra nếu request cần bypass
