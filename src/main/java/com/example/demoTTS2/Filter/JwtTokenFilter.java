@@ -107,6 +107,7 @@ public class JwtTokenFilter extends OncePerRequestFilter {
                 return role.getDeleteRole() != null && role.getDeleteRole() == 1;
             case EDIT_USER:
                 return role.getEditRole() != null && role.getEditRole() == 1;
+
             case READ_SALARY:
                 return role.getReadSalaryRole() != null && role.getReadSalaryRole() == 1;
             default:

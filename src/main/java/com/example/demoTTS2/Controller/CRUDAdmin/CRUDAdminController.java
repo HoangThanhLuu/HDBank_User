@@ -1,6 +1,5 @@
 package com.example.demoTTS2.Controller.CRUDAdmin;
 
-import com.example.demoTTS2.Model.CustomerEntity;
 import com.example.demoTTS2.Model.UserEntity;
 import com.example.demoTTS2.Repository.UserRepo;
 import com.example.demoTTS2.Service.ICustomerService;
@@ -10,11 +9,11 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 
-public class registerController {
+public class CRUDAdminController {
     private final IUserService iUserService;
     private final UserRepo userRepo;
     private final ICustomerService customerService;
-    public registerController(IUserService iUserService, UserRepo userRepo, ICustomerService customerService) {
+    public CRUDAdminController(IUserService iUserService, UserRepo userRepo, ICustomerService customerService) {
         this.iUserService = iUserService;
         this.userRepo = userRepo;
         this.customerService = customerService;
@@ -30,5 +29,4 @@ public class registerController {
         iUserService.deleteUser(id);
         return ResponseEntity.ok("delete success");
     }
-
 }

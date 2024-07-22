@@ -6,4 +6,5 @@ public enum Permission {
         DELETE_USER,
         EDIT_USER,
         READ_SALARY
+
 }

@@ -1,4 +1,4 @@
-package com.example.demoTTS2.Controller;
+package com.example.demoTTS2.Controller.CRUDAdmin;
 import com.example.demoTTS2.Model.UserEntity;
 import com.example.demoTTS2.Service.IUserService;
 import jakarta.servlet.http.HttpServletResponse;
